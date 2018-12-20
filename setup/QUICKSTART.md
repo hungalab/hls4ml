@@ -24,6 +24,8 @@ vivado_hls -f build.tcl
 
 This will create a Vivado HLS project with your model implmentation!
 
-##Existing examples
+##Existing examples and models
 
 Other examples of various HLS projects with examples of different machine learning algorithm implementations is in the directory: `example-prjs`.
+
+Example [Keras](https://github.com/hls-fpga-machine-learning/hls4ml/tree/master/keras-to-hls/example-keras-model-files) and [PyTorch](https://github.com/hls-fpga-machine-learning/hls4ml/tree/master/pytorch-to-hls/example-models) models are availble.  Here, we also give a little information in what is given in these models.
