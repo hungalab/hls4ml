@@ -19,7 +19,7 @@ To run the HLS project, do:
 
 ```
 cd my-hls-dir-test
-vivado_hls -f build.tcl
+vivado_hls -f build_prj.tcl
 ```
 
 This will create a Vivado HLS project with your model implmentation!
