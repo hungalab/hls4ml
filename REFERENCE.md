@@ -8,11 +8,16 @@ If you are using the package please cite:
    * Connecting the Dots Workshop: [talk](https://indico.cern.ch/event/658267/contributions/2813688/)
    * Fermilab Research Techniques Seminar: [talk](https://indico.fnal.gov/event/16908/)
    * CERN EP/IT - Data Science Seminar: [talk](https://indico.cern.ch/event/721567/) 
+   * CHEP 2018 Conference: [talk](https://indico.cern.ch/event/587955/contributions/2937529/)
+   * TWEPP 2018 Conference: [talk](https://indico.cern.ch/event/697988/contributions/3055990/)
+   * CPAD 2018 Conference: [talk](https://indico.fnal.gov/event/18104/session/23/contribution/72)
 
 # Contributors
 
-   * Jennifer Ngadiuba, Maurizio Pierini [CERN]
+   * Vladimir Loncar, Jennifer Ngadiuba, Maurizio Pierini [CERN]
+   * Giuseppe Di Guglielmo [Columbia University]
    * Javier Duarte, Sergo Jindariani, Benjamin Kreis, Ryan Rivera, Nhan Tran [Fermilab]
    * Edward Kreinar [Hawkeye360]
-   * Song Han, Philip Harris [MIT]
+   * Sioni Summers [Imperial College]
+   * Song Han, Philip Harris, Dylan Rankin [MIT]
    * Zhenbin Wu [University of Illinois at Chicago]
