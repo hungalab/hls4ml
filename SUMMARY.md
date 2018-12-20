@@ -2,8 +2,8 @@
 
 * [hls4ml](README.md)
 * [Status and Features](STATUS.md)
-* [Setup](SETUP.md)
-   * [Dependencies](setup/DEPENDENCIES.md)
+* [Getting started with hls4ml](SETUP.md)
+   * [Installation](setup/DEPENDENCIES.md)
    * [Quick Start](setup/QUICKSTART.md)
    * [Configuration](setup/CONFIGURATION.md)
 * [Concepts](CONCEPTS.md)
