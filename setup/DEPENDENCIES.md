@@ -19,11 +19,11 @@ _Xilinx Vivado license_: the package currently is only for Xilinx devices, a lic
 
 ## Miniconda
 
-For interested users, we provide a small script for setting up your environment using Miniconda (https://conda.io/miniconda.html).  We are currently support both `Python2` and `Python3`. `Python3` will be supported by default in the future.
+For interested users, we provide a small script for setting up your environment using Miniconda (https://conda.io/miniconda.html).  We are currently support both `Python2` and `Python3`, although we have moved to `Python3` as our default.
 
 Setup: 
 
-To install `miniconda3` and dependencies:
+To install `miniconda3` and dependencies (`bash` shell):
 ```
 source install_miniconda3.sh
 source install.sh
