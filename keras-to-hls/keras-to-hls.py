@@ -104,9 +104,9 @@ def main():
     for keras_layer in layer_config:
         if keras_layer["class_name"] not in supported_layers + activation_layers:
             raise Exception('ERROR: Unsupported layer type: {}'.format(keras_layer["class_name"]))
-        if 'batch_input_shape' in keras_layer['config']:
-            current_shape = keras_layer['config']['batch_input_shape'] # [None, 100, 7]    
-    print('Input shape:', current_shape)
+        # if 'batch_input_shape' in keras_layer['config']:
+            # current_shape = keras_layer['config']['batch_input_shape'] # [None, 100, 7]    
+    # print('Input shape:', current_shape)
 
     # Set some variables to make the routine after a bit smoother
     is_conv2d = False
@@ -121,6 +121,8 @@ def main():
 	        
     print('Topology:')
     for il,keras_layer in enumerate(layer_config):
+        if 'batch_input_shape' in keras_layer['config']:
+            current_shape = keras_layer['config']['batch_input_shape']
         if keras_layer["class_name"] is 'Flatten':
             current_shape = [current_shape[0], np.prod(current_shape[1:])]
         if keras_layer["class_name"] in skip_layers:

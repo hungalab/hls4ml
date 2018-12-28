@@ -129,7 +129,7 @@ void conv_2d(
     #pragma HLS function_instantiate variable=weights,biases
     
     // Parallel mode
-    #pragma HLS PIPELINE
+//    #pragma HLS PIPELINE
     #pragma HLS ARRAY_PARTITION variable=biases complete dim=0
   
     // Limit multipliers to control parallelization
@@ -141,9 +141,9 @@ void conv_2d(
       ConvOutWidth: for(int ow = 0; ow < CONFIG_T::out_width; ow++) {
         ConvFilt: for(int ff = 0; ff < CONFIG_T::n_filt; ff++){
           ConvChan: for(int cc = 0; cc < CONFIG_T::n_chan; cc++){
+#pragma HLS PIPELINE
             ConvFiltHeight: for(int fh = 0; fh < CONFIG_T::filt_height; fh++){
               ConvFiltWidth: for(int fw = 0; fw < CONFIG_T::filt_width; fw++){
-                    
                 int index_mult = oh*CONFIG_T::out_width*CONFIG_T::n_filt*CONFIG_T::n_chan*CONFIG_T::filt_height*CONFIG_T::filt_width 
                                + ow*CONFIG_T::n_filt*CONFIG_T::n_chan*CONFIG_T::filt_height*CONFIG_T::filt_width 
                		       + ff*CONFIG_T::n_chan*CONFIG_T::filt_height*CONFIG_T::filt_width

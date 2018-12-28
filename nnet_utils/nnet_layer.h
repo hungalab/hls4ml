@@ -82,8 +82,9 @@ void compute_layer(
             // Dont use "ceil" here; as of 2018.2, HLS crashes mysteriously
             cycle_factor = cycle_factor / CONFIG_T::reuse_factor;
         }
-        #pragma HLS ARRAY_PARTITION variable=weights cyclic factor=cycle_factor
-        #pragma HLS ARRAY_PARTITION variable=mult cyclic factor=cycle_factor
+        // if reuse_factor is too big cycle_factor becomes 0
+//        #pragma HLS ARRAY_PARTITION variable=weights cyclic factor=cycle_factor
+//        #pragma HLS ARRAY_PARTITION variable=mult cyclic factor=cycle_factor
         #pragma HLS ARRAY_PARTITION variable=acc complete
         #pragma HLS DATAFLOW
         #pragma HLS STREAM variable=mult depth=1
