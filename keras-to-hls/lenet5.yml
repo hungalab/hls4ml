@@ -1,10 +1,10 @@
-KerasJson: lenet5-model-files/mnist_lenet.json
-KerasH5: lenet5-model-files/mnist_lenet.h5
-OutputDir: lenet5-32bit
+KerasJson: lenet5-model-files/saved_model.json
+KerasH5: lenet5-model-files/saved_weights.h5
+OutputDir: lenet5-proj
 ProjectName: lenet5
 XilinxPart: xcku095-ffvb2104-1-c
 ClockPeriod: 10
 
 IOType: io_serial # options: io_serial/io_parallel
 ReuseFactor: 50
-DefaultPrecision: ap_fixed<32,6> 
+DefaultPrecision: ap_fixed<16,6> 

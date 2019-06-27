@@ -157,7 +157,7 @@ void pooling2d(data_T data[CONFIG_T::in_height][CONFIG_T::in_width][CONFIG_T::n_
 				  for(int ll = 0; ll < CONFIG_T::stride_width; ll++){
             if(ii+kk < CONFIG_T::pad_top || ii+kk >= (padded_height - CONFIG_T::pad_bottom) || jj+ll < CONFIG_T::pad_left || jj+ll >= (padded_width - CONFIG_T::pad_right)){
               // Add padding
-              pool[kk * CONFIG_T::stride_width + ll] = pad_val<data_T, CONFIG_T::pool_op>();
+              pool[kk * CONFIG_T::stride_width + ll] = 0;
             }else{
   					  pool[kk * CONFIG_T::stride_width + ll] = data[ii + kk][jj + ll][ff];
               img_overlap++;

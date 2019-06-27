@@ -126,10 +126,9 @@ void conv_2d(
     #pragma HLS ARRAY_PARTITION variable=acc complete dim=0
     
     // Use a function_instantiate in case it helps to explicitly optimize unchanging weights/biases 
-    #pragma HLS function_instantiate variable=weights,biases
+//    #pragma HLS function_instantiate variable=weights,biases
     
     // Parallel mode
-//    #pragma HLS PIPELINE
     #pragma HLS ARRAY_PARTITION variable=biases complete dim=0
   
     // Limit multipliers to control parallelization
